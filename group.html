@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<link rel="JavaScript" href="group.js">
+<link rel="stylesheet" href="group.css">
+<body>
+
+<h2><strong>JavaScript  Reverse Array</strong></h2>
+
+<p>The reverse array sort method reverses the order of elements in an array.<br>
+In other words the array's first element becomes the last and the last becomes the first.
+</p>
+<button onclick="tryIt()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+// Create and display an array:
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function tryIt() {
+  // Then reverse it:
+  fruits.reverse();
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+<p>When you combine the sort function with the reverse function,<br> the order of the elements becomes descending.
+</p>
+<button onclick ="tryThis()">Try this</button>
+<p id="sort"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("sort").innerHTML = fruits;
+
+function tryThis() {
+fruits.sort();
+fruits.reverse();
+document.getElementById("sort").innerHTML = fruits;
+}
+
+</script>
+
+<p>Reversing an array in place means creating a new array that copies the elements in the old array and<br> places it in the new array but in reverse.
+</p>
+<script>
+
+
+var number = [1,2,3,4,5,6,7];
+
+    var reversednum = [];
+   for (var i = number.length; i>=1; i--) 
+   {
+  reversednum.push(i);
+    }
+console.log(reversednum);
+
+
+</script>
+
+</body>
+</html>
